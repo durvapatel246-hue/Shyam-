@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sorry Letter</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    text-align:center;
+    padding-top:100px;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:320px;
+    margin:auto;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#ff4d4d;
+}
+
+button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.love{
+    background:#ff4d6d;
+    color:white;
+}
+
+.hate{
+    background:#444;
+    color:white;
+}
+
+#result{
+    margin-top:20px;
+    font-size:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Sorry Angry Bird 🐦</h1>
+
+<p id="message">
+Dear <b>Boy Name</b>, <br>
+I’m really sorry if I made you angry.  
+Please forgive me 💔
+</p>
+
+<p>Do you love me or hate me?</p>
+
+<button class="love" onclick="showLove()">Love You ❤️</button>
+<button class="hate" onclick="showHate()">Hate You 😒</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+function showLove(){
+    document.getElementById("result").innerHTML =
+    "Love you too! ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️";
+}
+
+function showHate(){
+    document.getElementById("result").innerHTML =
+    "🤗 Big Hug! I still love you moreee ❤️";
+}
+</script>
+
+</body>
+</html>
